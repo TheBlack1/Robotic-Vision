@@ -2,7 +2,6 @@
 import cv
 import cv2
 import numpy as np
-import config 
 import math
 from PIL import Image, ImageDraw
 import time
@@ -16,8 +15,8 @@ def move(jointName, targetAngles,targetTimes,isAbsolute):
 
 isAbsolute = True;
 
-IP = "sylvester.local"
-IP = "169.254.124.254"
+IP = "daffy.local"
+IP = "169.254.238.191"
 
 camProxy = ALProxy("ALVideoDevice", IP, 9559)
 motionProxy = ALProxy("ALMotion", IP, 9559)
